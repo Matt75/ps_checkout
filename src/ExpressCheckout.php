@@ -60,7 +60,6 @@ class ExpressCheckout
 
         $paypalAccountRepository = new PaypalAccountRepository();
         $paypalSdkLink = new PayPalSdkLinkBuilder();
-        $paypalSdkLink->enableDisplayExpressCheckout();
 
         $this->context->smarty->assign([
             'paypalSdkLink' => $paypalSdkLink->buildLink(),
